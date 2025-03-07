@@ -122,24 +122,24 @@
 
 //remove all duplicate values from the vector.
 
-// #include<iostream>
-// using namespace std;
-// #include<vector>
-// #include<algorithm>
-// int main(){
-//     vector<int>v{2,1,2,4,5,4,1,8};
-//     sort(v.begin(),v.end());
-//     int x=1;
-//     for(int a=1;a<v.size();a++){
-//         if(v[x=1]!=v[a]){
-//             v[x]=v[a];
-//             x++;
-//         }
-//     }
-//     for(int i=0;i<x;i++){
-//         cout<<v[i]<<'\t';
-//     }
-// }
+#include<iostream>
+using namespace std;
+#include<vector>
+#include<algorithm>
+int main(){
+    vector<int>v{2,1,2,4,5,4,1,8};
+    sort(v.begin(),v.end());
+    int x=1;
+    for(int a=1;a<v.size();a++){
+        if(v[x-1]!=v[a]){
+            v[x]=v[a];
+            x++;
+        }
+    }
+    for(int i=0;i<x;i++){
+        cout<<v[i]<<'\t';
+    }
+}
 
 //STACK
 //it follows LIFO.last in first out.
@@ -195,27 +195,29 @@
 // }
 
 
-#include<iostream>
-using namespace std;
-#include<bits/stdc++.h>
-int valid(string s)
-{
-    if(s.size()>4)
-    {
-        return 1;
-    }
-    else{
-        return 0;
-    }
-}
-int main(){
-    string s;
-    cout<<"enter name"<<endl;
-    cin>>s;
-    if(valid(s)){
-        cout<<"win";
-    }
-    else{
-        cout<<"loose";
-    }
-}
+// #include<iostream>
+// using namespace std;
+// #include<bits/stdc++.h>
+// int valid(string s)
+// {
+//     if(s.size()>4)
+//     {
+//         return 1;
+//     }
+//     else{
+//         return 0;
+//     }
+// }
+// int main(){
+//     string s;
+//     cout<<"enter name"<<endl;
+//     cin>>s;
+//     if(valid(s)){
+//         cout<<"win";
+//     }
+//     else{
+//         cout<<"loose";
+//     }
+// }
+
+
