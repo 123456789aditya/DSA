@@ -146,28 +146,76 @@
 //only four func used PUSH(),POP(),EMPTY(),TOP().
 // we cant show stack on our database.
 
+// #include<iostream>
+// using namespace std;
+// #include<vector>
+// #include<stack>
+// int main(){
+//     stack<int>st;
+//     st.push(10);
+//     st.push(4);
+//     st.push(5);
+//     st.push(11);
+//     st.push(3);
+//     cout<<"result"<<st.empty()<<"\n";
+//     cout<<st.top()<<"\n";
+//     while(!st.empty()){
+//         cout<<st.top()<<"\n";
+//         st.pop();
+//     }
+//     cout<<"result="<<st.empty()<<"\n";
+
+// }
+
+
+//uses of stack
+
+//#include<iostream>
+// using namespace std;
+// int valid(string s)
+// {
+//     if(s.size()>4)
+//     {
+//         return 1;
+//     }
+//     else{
+//         return 0;
+//     }
+// }
+// int main(){
+//     string s;
+//     cout<<"enter name"<<endl;
+//     cin>>s;
+//     if(valid(s)){
+//         cout<<"win";
+//     }
+//     else{
+//         cout<<"loose";
+//     }
+// }
+
+
 #include<iostream>
 using namespace std;
-#include<vector>
-#include<stack>
-int main(){
-    stack<int>st;
-    st.push(10);
-    st.push(4);
-    st.push(5);
-    st.push(11);
-    st.push(3);
-    cout<<"result"<<st.empty()<<"\n";
-    cout<<st.top()<<"\n";
-    while(!st.empty()){
-        cout<<st.top()<<"\n";
-        st.pop();
+#include<bits/stdc++.h>
+int valid(string s)
+{
+    if(s.size()>4)
+    {
+        return 1;
     }
-    cout<<"result="<<st.empty()<<"\n";
-
+    else{
+        return 0;
+    }
 }
-
-
-
-
-
+int main(){
+    string s;
+    cout<<"enter name"<<endl;
+    cin>>s;
+    if(valid(s)){
+        cout<<"win";
+    }
+    else{
+        cout<<"loose";
+    }
+}
