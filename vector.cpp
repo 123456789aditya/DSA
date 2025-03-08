@@ -6,7 +6,8 @@
 //     p1=make_pair(101,"aditya");
 //     cout<<"name"<<p1.second<<endl;
 //     cout<<"roll no."<<p1.first<<endl;
-
+   
+// }
 
 // }
 
@@ -65,6 +66,11 @@
 //     }
 // }
 
+
+// 2-D vector
+
+
+
 // #include<iostream>
 // using namespace std;
 // #include<vector>
@@ -122,24 +128,24 @@
 
 //remove all duplicate values from the vector.
 
-#include<iostream>
-using namespace std;
-#include<vector>
-#include<algorithm>
-int main(){
-    vector<int>v{2,1,2,4,5,4,1,8};
-    sort(v.begin(),v.end());
-    int x=1;
-    for(int a=1;a<v.size();a++){
-        if(v[x-1]!=v[a]){
-            v[x]=v[a];
-            x++;
-        }
-    }
-    for(int i=0;i<x;i++){
-        cout<<v[i]<<'\t';
-    }
-}
+// #include<iostream>
+// using namespace std;
+// #include<vector>
+// #include<algorithm>
+// int main(){
+//     vector<int>v{2,1,2,4,5,4,1,8};
+//     sort(v.begin(),v.end());
+//     int x=1;
+//     for(int a=1;a<v.size();a++){
+//         if(v[x-1]!=v[a]){
+//             v[x]=v[a];
+//             x++;
+//         }
+//     }
+//     for(int i=0;i<x;i++){
+//         cout<<v[i]<<'\t';
+//     }
+// }
 
 //STACK
 //it follows LIFO.last in first out.
@@ -221,3 +227,45 @@ int main(){
 // }
 
 
+// #include<iostream>
+// using namespace std;
+// #include<vector>
+// int main(){
+//     vector<int>v1;
+//     int s;
+//     int n;
+//     cout<<"enter the size of vector"<<endl;
+//     cin>>s;
+//     cout<<"enter numbers:"<<endl;
+//     for(int i=0;i<s;i++){
+//         cout<<"enter data:";
+//         cin>>n;
+//         v1.push_back({n});
+//     }
+//     for(int i=0;i<s;i++){
+//         cout<<v1[i]<<'\t';
+//     }
+    
+// }
+    
+    
+// #include<iostream>
+// using namespace std;
+// #include<vector>
+// #include<tuple>
+// int main(){
+//     tuple<pair<int,string>>student;
+//     int rollno,marks,r;
+//     string name;
+//     cout<<"how many records"<<endl;
+//     cin>>r;
+//     for(int i=1;i<=r;i++){
+//         cout<<"enter roll no."<<endl;
+//         cin>>rollno;
+//         cout<<"enter marks"<<endl;
+//         cin>>marks;
+//         cout<<"enter name"<<endl;
+//         cin>>name;
+//         student.make_tuple(rollno,marks,name);
+//     }
+// }
