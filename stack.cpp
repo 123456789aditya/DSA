@@ -102,6 +102,14 @@
 //     }
 // }
 
+//LIST templates
+//we can insert and delete from both front and back side of the list
+
+
+
+
+#include<iostream>
+using namespace std;
 
 
 
