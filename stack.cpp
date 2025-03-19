@@ -153,10 +153,20 @@
 //     }
 
 
+#include<iostream>
+using namespace std;
+template<typename t1>
+t1 sum(t1 a, t1 b){
+    return a+b;
+}
 
+template<typename t1,typename t2>
+t1 multiply(t1 x,t2 y){
+    return x*y;
+}
 
-// #include<iostream>
-// using namespace std;
-// int main(){
-//     cout<<'iwsfdhjbgvkdjfks>BKV>';
-// }
+int main(){
+    cout<<sum(3.4,5.1);
+    cout<<multiply(3,8.1);
+}
+
