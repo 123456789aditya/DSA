@@ -153,20 +153,22 @@
 //     }
 
 
-#include<iostream>
-using namespace std;
-template<typename t1>
-t1 sum(t1 a, t1 b){
-    return a+b;
-}
+// #include<iostream>
+// using namespace std;
+// #include<vector>
+// int main(){
+//     pair<int,string>p1;
+//     p1=make_pair(100,"amit");
+//     cout<<"no. is:"<<p1.first;
+//     cout<<"name is:"<<p1.second;
+// }
 
-template<typename t1,typename t2>
-t1 multiply(t1 x,t2 y){
-    return x*y;
-}
-
-int main(){
-    cout<<sum(3.4,5.1);
-    cout<<multiply(3,8.1);
-}
-
+// #include<iostream>
+// using namespace std;
+// #include<vector>
+// int main(){
+//     pair<string,int> p;
+//     p=make_pair("aditya",3);
+//     cout<<"my name is: "<<p.first<<endl;
+//     cout<<"my roll number is: "<<p.second<<endl;
+// }
