@@ -137,20 +137,20 @@
 //     }
 
 
-//     auto t3=l1.begin();
-//     advance(t3,1);
-//     *t3=900;
-//     cout<<"\nafter update \n";
-//     for(auto p:l1){
-//         cout<<p<<"\t";
-//     }
-//     auto g=find(l1.begin(),l1.end(),900);
-//     if(g!=l1.end()){
-//         cout<<"found"<<*g;
-//     }
-//     else{
-//         cout<<"not found";
-//     }
+    // auto t3=l1.begin();
+    // advance(t3,1);
+    // *t3=900;
+    // cout<<"\nafter update \n";
+    // for(auto p:l1){
+    //     cout<<p<<"\t";
+    // }
+    // auto g=find(l1.begin(),l1.end(),900);
+    // if(g!=l1.end()){
+    //     cout<<"found"<<*g;
+    // }
+    // else{
+    //     cout<<"not found";
+    // }
 
 
 // #include<iostream>
@@ -162,3 +162,9 @@
 //     cout<<"name is: "<<p.first<<endl;
 //     cout<<"roll number: "<<p.second<<endl;
 // }
+
+#include<iostream>
+using namespace std;
+int main(){
+    cout<<"hi";
+}
