@@ -153,22 +153,12 @@
 //     }
 
 
-// #include<iostream>
-// using namespace std;
-// #include<vector>
-// int main(){
-//     pair<int,string>p1;
-//     p1=make_pair(100,"amit");
-//     cout<<"no. is:"<<p1.first;
-//     cout<<"name is:"<<p1.second;
-// }
-
-// #include<iostream>
-// using namespace std;
-// #include<vector>
-// int main(){
-//     pair<string,int> p;
-//     p=make_pair("aditya",3);
-//     cout<<"my name is: "<<p.first<<endl;
-//     cout<<"my roll number is: "<<p.second<<endl;
-// }
+#include<iostream>
+using namespace std;
+#include<vector>
+int main(){
+    pair<string,int>p;
+    p=make_pair("aditya",3);
+    cout<<"name is: "<<p.first<<endl;
+    cout<<"roll number: "<<p.second<<endl;
+}
