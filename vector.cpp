@@ -227,26 +227,26 @@ int main(){
 // }
 
 
-#include<iostream>
-using namespace std;
-#include<vector>
-int main(){
-    vector<int>v1;
-    int s;
-    int n;
-    cout<<"enter the size of vector"<<endl;
-    cin>>s;
-    cout<<"enter numbers:"<<endl;
-    for(int i=0;i<s;i++){
-        cout<<"enter data:";
-        cin>>n;
-        v1.push_back({n});
-    }
-    for(int i=0;i<s;i++){
-        cout<<v1[i]<<'\t';
-    }
+// #include<iostream>
+// using namespace std;
+// #include<vector>
+// int main(){
+//     vector<int>v1;
+//     int s;
+//     int n;
+//     cout<<"enter the size of vector"<<endl;
+//     cin>>s;
+//     cout<<"enter numbers:"<<endl;
+//     for(int i=0;i<s;i++){
+//         cout<<"enter data:";
+//         cin>>n;
+//         v1.push_back({n});
+//     }
+//     for(int i=0;i<s;i++){
+//         cout<<v1[i]<<'\t';
+//     }
     
-}
+// }
     
     
 // #include<iostream>
