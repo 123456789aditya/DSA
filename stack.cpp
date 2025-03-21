@@ -163,8 +163,27 @@
 //     cout<<"roll number: "<<p.second<<endl;
 // }
 
-#include<iostream>
-using namespace std;
-int main(){
-    cout<<"hi";
-}
+
+// #include<iostream>
+// using namespace std;
+// #include<vector>
+// int main(){
+//     vector<pair<int,string>>v;
+//     int rollno,n;
+//     string name;
+//     cout<<"enter how many records"<<endl;
+//     cin>>n;
+//     for(int i=1;i<=n;i++){
+//         cout<<"enter roll number"<<endl;
+//         cin>>rollno;
+//         cout<<"enter name"<<endl;
+//         cin>>name;
+//         v.push_back(make_pair(rollno,name));
+//         v.push_back({rollno,name});
+
+//     }
+//     cout<<"results are"<<endl;
+//     for(int i=0;i<v.size();i++){
+//         cout<<v[i].first<<":"<<v[i].second<<endl;
+//     }
+// }

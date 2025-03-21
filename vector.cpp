@@ -11,44 +11,34 @@
 
 // }
 
-#include<iostream>
-using namespace std;
-#include<vector>
-int main(){
-    vector<pair<int,string>>v;
-    int rollno,n;
-    string name;
-    cout<<"enter how many records"<<endl;
-    cin>>n;
-    for(int i=1;i<=n;i++){
-        cout<<"enter roll number"<<endl;
-        cin>>rollno;
-        cout<<"enter name"<<endl;
-        cin>>name;
-        v.push_back(make_pair(rollno,name));
-        v.push_back({rollno,name});
-
-    }
-    cout<<"results are"<<endl;
-    for(int i=0;i<v.size();i++){
-        cout<<v[i].first<<":"<<v[i].second<<endl;
-    }
-}
-
-
-
-
 // #include<iostream>
 // using namespace std;
 // #include<vector>
-// #include<tuple>
 // int main(){
+//     vector<pair<int,string>>v;
+//     int rollno,n;
+//     string name;
+//     cout<<"enter how many records"<<endl;
+//     cin>>n;
+//     for(int i=1;i<=n;i++){
+//         cout<<"enter roll number"<<endl;
+//         cin>>rollno;
+//         cout<<"enter name"<<endl;
+//         cin>>name;
+//         v.push_back(make_pair(rollno,name));
+//         v.push_back({rollno,name});
 
-//     tuple<int,string,int>student{101,"joy",11};
-//     cout<<"rollno"<<get<0>(student)<<endl;
-//     cout<<"name"<<get<1>(student)<<endl;
-//     cout<<"marks"<<get<2>(student)<<endl;
+//     }
+//     cout<<"results are"<<endl;
+//     for(int i=0;i<v.size();i++){
+//         cout<<v[i].first<<":"<<v[i].second<<endl;
+//     }
 // }
+
+
+
+
+
     
 
 //Nested Vector...
@@ -103,49 +93,30 @@ int main(){
 
 // auto p=[] (int a,int b) {return a+b;};
 
-//multiply 10 in each element of 2 vectors and add them.
 
-// #include<iostream>
-// using namespace std;
-// #include<vector>
-// #include<algorithm>
-// int main(){
-//     vector<int>v1{1,4,5,8};
-//     vector<int>v2{2,1,1};
-//     int x=0;
-//     int y=0;
-//     for(int i=0;i<v1.size();i++){
-//         x=x*10+v1[i];
-
-//     }
-//     for(int j=0;j<v2.size();j++){
-//         y=y*10+v2[j];
-//     }
-//     cout<<"result="<<x+y;
-// }
 
 
 
 //remove all duplicate values from the vector.
 
-// #include<iostream>
-// using namespace std;
-// #include<vector>
-// #include<algorithm>
-// int main(){
-//     vector<int>v{2,1,2,4,5,4,1,8};
-//     sort(v.begin(),v.end());
-//     int x=1;
-//     for(int a=1;a<v.size();a++){
-//         if(v[x-1]!=v[a]){
-//             v[x]=v[a];
-//             x++;
-//         }
-//     }
-//     for(int i=0;i<x;i++){
-//         cout<<v[i]<<'\t';
-//     }
-// }
+#include<iostream>
+using namespace std;
+#include<vector>
+#include<algorithm>
+int main(){
+    vector<int>v{2,1,2,4,5,4,1,8};
+    sort(v.begin(),v.end());
+    int x=1;
+    for(int a=1;a<v.size();a++){
+        if(v[x-1]!=v[a]){
+            v[x]=v[a];
+            x++;
+        }
+    }
+    for(int i=0;i<x;i++){
+        cout<<v[i]<<'\t';
+    }
+}
 
 //STACK
 //it follows LIFO.last in first out.
