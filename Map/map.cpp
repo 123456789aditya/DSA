@@ -51,22 +51,22 @@
 
 ////Multi-map -: it supports duplicate value..
 
-//we can delete duplicate value by 2 ways by using iterator and by value. by using iterator we can delete only one value and by using value we can delete multiple values.
-// #include<iostream>
-// #include<map>
-// using namespace std;
-// int main(){
-//     multimap<int,string>mp;
-//     mp.insert({10,'anu'});
-//     mp.insert({101,'sunnty'});
-//     mp.insert({'10','akj'});
-//     mp.insert({14,'upi'});
-//     mp.insert({10,'anu'});
-//     for(p:mp){
-//         cout<<p.first<<":"<<p.second;
+we can delete duplicate value by 2 ways by using iterator and by value. by using iterator we can delete only one value and by using value we can delete multiple values.
+#include<iostream>
+#include<map>
+using namespace std;
+int main(){
+    multimap<int,string>mp;
+    mp.insert({10,'anu'});
+    mp.insert({101,'sunnty'});
+    mp.insert({'10','akj'});
+    mp.insert({14,'upi'});
+    mp.insert({10,'anu'});
+    for(p:mp){
+        cout<<p.first<<":"<<p.second;
         
-//     }
-// }
+    }
+}
 
 
 
