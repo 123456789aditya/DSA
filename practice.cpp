@@ -33,20 +33,45 @@
 
 // }
 
+// #include<iostream>
+// using namespace std;
+// #include<vector>
+// #include<algorithm>
+// int main(){
+
+//     vector<int>v{2,1,2,5,4,4,1,8};
+//     sort(v.begin(),v.end());
+//     int x=1;
+//     for(int a=1;a<v.size();a++){
+//         if(v[x-1]!=v[a]){
+//             v[x]=v[a];
+//             x++;
+//         }
+//     }
+//     for(int i=0;i<x;i++){
+//         cout<<v[i];
+//     }
+// }
+
 #include<iostream>
 using namespace std;
 #include<vector>
 #include<algorithm>
 int main(){
-    int x=0,y=0;
-    vector<int>v1{1,4,5,8};
-    vector<int>v2{2,1,1,7};
-    for(int i=0;i<v1.size();i++){
-        x=x*10+v1[i];
+    vector<pair<string,int>>v;
+    int rollno,n;
+    string name;
+    cout<<"enter how many records"<<endl;
+    cin>>n;
+    for(int i=0;i<n;i++){
+        cout<<"enter rollno"<<endl;
+        cin>>rollno;
+        cout<<"enter name"<<endl;
+        cin>>name;
+        v.push_back(make_pair(name,rollno));
     }
-    for(int j=0;j<v2.size();j++){
-
-        y=y*10 + v2[j];
+    cout<<"results are"<<endl;
+    for(int i=0;i<v.size();i++){
+        cout<<v[i].first<<" : "<<v[i].second<<endl;
     }
-    cout<<"sum will be:"<<x+y;
 }
