@@ -33,11 +33,29 @@
 
 // }
 
+//unordered map. its timing is much better than sorted map.
+//we cants use complex data type in unordered map because it dosent have its own hashing function.
+
 #include<iostream>
+#include<unordered_map>
 using namespace std;
 int main(){
-    cout<<"hi";
+    unordered_map<int,string>up;
+    up.insert({10,"anu"});
+    up.insert({101,"sunny"});
+    up.insert({73,"ravi"});
+    for(auto p:up){
+        cout<<p.first<<" , "<<p.second<<"\n";
+    }
 }
+
+
+
+
+
+
+
+
 
 
 
