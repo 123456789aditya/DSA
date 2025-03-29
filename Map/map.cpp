@@ -36,18 +36,18 @@
 //unordered map. its timing is much better than sorted map.
 //we cants use complex data type in unordered map because it dosent have its own hashing function.
 
-#include<iostream>
-#include<unordered_map>
-using namespace std;
-int main(){
-    unordered_map<int,string>up;
-    up.insert({10,"anu"});
-    up.insert({101,"sunny"});
-    up.insert({73,"ravi"});
-    for(auto p:up){
-        cout<<p.first<<" , "<<p.second<<"\n";
-    }
-}
+// #include<iostream>
+// #include<unordered_map>
+// using namespace std;
+// int main(){
+//     unordered_map<int,string>up;
+//     up.insert({10,"anu"});
+//     up.insert({101,"sunny"});
+//     up.insert({73,"ravi"});
+//     for(auto p:up){
+//         cout<<p.first<<" , "<<p.second<<"\n";
+//     }
+// }
 
 ////Multi-map -: it supports duplicate value..
 
@@ -68,6 +68,40 @@ int main(){
 //     }
 // }
 
+//self reference class
+
+#include<iostream>
+using namespace std;
+class node{
+    public:int data;
+    node *left;
+    node *right;
+    node(int d){
+        data = d;
+        left=NULL;
+        right=NULL;
+    }
+
+};
+int main(){
+    node *root=new node(10);
+    root->left=new node(20);
+    root->right=new node(30);
+    cout<<"preorder"<<endl;
+    cout<<root->data<<"\t";
+    cout<<root->left->data<<"\t";
+    cout<<root->right->data<<"\n";
+    cout<<"Inorder"<<endl;
+    cout<<root->left->data<<"\t";
+    cout<<root->data<<"\t";
+    cout<<root->right->data<<endl;
+    cout<<"postorder"<<endl;
+    cout<<root->left->data<<"\t";
+    cout<<root->right->right<<"\t";
+    cout<<root->data<<endl;
+
+
+}
 
 
 
